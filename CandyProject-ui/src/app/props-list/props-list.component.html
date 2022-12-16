@@ -1,1 +1,43 @@
-<p>props-list works!</p>
+<style>
+  ul {
+    list-style-type: none;
+    /*margin: 0;*/
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .nav-card {
+    float:right;
+  }
+  .nav-bar{
+    /*background-color: #333;*/
+  }
+</style>
+
+<div class="nav-bar">
+  <nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/catalog">Catalog</a></li>
+      <li class="nav-card"><a href="/card">Card</a></li>
+    </ul>
+  </nav>
+</div>

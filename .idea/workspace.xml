@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/controllers/cartController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/controllers/productController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/controllers/productpageController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/error/ApiError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/middleware/ErrorHandlingMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/models/models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/routes/cartRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/routes/productRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/routes/productpageRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/routes/userRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/static/114654e6-7c59-4ec1-beb8-18f1e55cf82a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/static/7ba4facb-c400-4d30-afb7-2676230bd626.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/static/c0ec1742-7e44-49d8-a251-cdfdc06e6287.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/props-list/props-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/props-list/props-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/props-list/props-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/props-list/props-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +54,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9eb4892e-37f1-4f08-b5f4-b9a2a9f124fa" />
+        <option name="url" value="https://github.com/xclamation/CandyProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectId" id="2IlqNBRRuHtttaZnbLbydlK8lkD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -28,12 +69,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Sber-Corus-main" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.20533642" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\src\app\google-api" />
+      <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-node-api\routes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,7 +98,12 @@
       <updated>1670766474777</updated>
       <workItem from="1670766476201" duration="12000" />
       <workItem from="1670766528862" duration="1645000" />
-      <workItem from="1670768893984" duration="353000" />
+      <workItem from="1670768893984" duration="12337000" />
+      <workItem from="1670840549129" duration="5883000" />
+      <workItem from="1671019967563" duration="15961000" />
+      <workItem from="1671115573704" duration="19683000" />
+      <workItem from="1671178179920" duration="5423000" />
+      <workItem from="1671201394934" duration="5094000" />
     </task>
     <servers />
   </component>
@@ -62,6 +120,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
