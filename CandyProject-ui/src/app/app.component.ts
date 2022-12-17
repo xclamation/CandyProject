@@ -8,6 +8,4 @@ import {GoogleApiService} from "./google-api/google-api.service";
 })
 export class AppComponent {
   title = 'CandyProject';
-
-  constructor(private readonly google: GoogleApiService) {}
 }

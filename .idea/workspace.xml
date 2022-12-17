@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CandyProject-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CandyProject-main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +66,21 @@
       <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-node-api\routes" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/CandyProject-ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +96,9 @@
       <workItem from="1671019967563" duration="15961000" />
       <workItem from="1671115573704" duration="19683000" />
       <workItem from="1671178179920" duration="5423000" />
-      <workItem from="1671201394934" duration="5673000" />
+      <workItem from="1671201394934" duration="6620000" />
+      <workItem from="1671210476238" duration="6921000" />
+      <workItem from="1671267874339" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -79,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671208908579</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1671209733352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671209733352</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

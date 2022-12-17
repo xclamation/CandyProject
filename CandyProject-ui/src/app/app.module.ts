@@ -10,11 +10,15 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductPageComponent } from './product-page/product-page.component'
 import {HttpClientModule} from "@angular/common/http";
 import {OAuthModule} from "angular-oauth2-oidc";
+import { HomeComponent } from './home/home.component';
+import {CATALOG_ROUTE, HOME_ROUTE, PRODUCT_ROUTE} from "./routes";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
-  {path: 'catalog', component: CatalogComponent},
-  {path: '', redirectTo: '/catalog', pathMatch: 'full'},
-  {path: 'product/1', component: ProductPageComponent, pathMatch:'full'}
+  {path: HOME_ROUTE, component: HomeComponent},
+  {path: CATALOG_ROUTE, component: CatalogComponent},
+  {path: '', redirectTo: HOME_ROUTE, pathMatch: 'full'},
+  {path: PRODUCT_ROUTE + '/:id', component: ProductPageComponent, pathMatch:'full'}
 ]
 @NgModule({
   declarations: [
@@ -23,13 +27,15 @@ const routes: Routes = [
     CatalogComponent,
     HeaderComponent,
     FooterComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    OAuthModule.forRoot()
+    OAuthModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
