@@ -23,7 +23,9 @@
       "dom"
     ],
     "types": [
-      "@angular/localize"
+      "@angular/localize",
+      "jest",
+      "mocha"
     ],
     "useDefineForClassFields": false
   },

@@ -1,0 +1,94 @@
+<!--<style>
+  ul {
+    list-style-type: none;
+    /*margin: 0;*/
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .nav-card {
+    float:right;
+  }
+  .nav-bar{
+    /*background-color: #333;*/
+  }
+  .item-block{
+    background-color: gray;
+    width: 800px;
+  }
+  .item-img, .item-counter {
+    width: 300px;
+  }
+  .item-description{
+    display:inline-block;
+    position: fixed;
+    text-align: center;
+  }
+  .item-info{
+    text-align: left;
+    margin-left: 5px;
+  }
+  .item-counter{
+    padding-left: 150px;
+  }
+  .item-buy-btn{
+    float:right;
+    margin-right: 20px;
+    font-size: 50px;
+  }
+</style>-->
+<!--<body>
+  <div class="items-list">
+    <div class="item-block">
+      <img class="item-img" src="https://static.vkusnyblog.ru/full/uploads/2015/12/medovik-atelier.jpg" alt="Медовик">
+      <div class="item-description">
+        <span class="item-name">"Медовик"</span>
+        <div class="item-info">
+          <p>Состав: сметана 30%, сахар, мед, сливочное масло, яйца, сахар, мед, сода, мука.</p>
+          <p>Пищевая ценность (на 100 грамм): Белки: 4.4 гр, Жиры: 16.7 гр, Углеводы: 42.2 гр, Калории: 333.3 ккал.</p>
+          <p>
+            <span>Цена (100 гр.): 228 </span>
+            <span>Вес: 125 гр. </span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <span class="item-counter">- O +</span>
+        <span class="item-buy-btn">В корзину</span>
+      </div>
+    </div>
+  </div>
+</body>-->
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-2">
+        <img src="{{apiUrl + item.image}}" alt="{{item.name}} image">
+        <h5>Название: {{item.name}}</h5>
+        <p>Цена: {{item.price}} р.</p>
+        <button class="btn btn-primary">Add to cart</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+

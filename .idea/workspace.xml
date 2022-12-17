@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CandyProject-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CandyProject-main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/.browserslistrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +37,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2IlqNBRRuHtttaZnbLbydlK8lkD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -62,6 +62,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\src\app" />
+      <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\src\app\api" />
       <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\src\app\google-api" />
       <recent name="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-node-api\routes" />
     </key>
@@ -98,7 +100,9 @@
       <workItem from="1671178179920" duration="5423000" />
       <workItem from="1671201394934" duration="6620000" />
       <workItem from="1671210476238" duration="6921000" />
-      <workItem from="1671267874339" duration="1247000" />
+      <workItem from="1671267874339" duration="2879000" />
+      <workItem from="1671271251752" duration="1928000" />
+      <workItem from="1671278109719" duration="12397000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671209733352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1671269848780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671269848780</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +136,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
