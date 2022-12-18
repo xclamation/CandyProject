@@ -1,2 +1,42 @@
-<app-header></app-header>
-<p>cart works!</p>
+<ng-container *ngIf="true">
+  <div class="container">
+    <div class="table-name">Список Товаров:</div>
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="item-card">
+            <td class="image-section"><img src="./assets/images/medovik.jpg" alt=""></td>
+            <td>Медовик</td>
+            <td class="count-section"><button class="btn-count btn btn-success">+</button>
+              <p class="counter">4</p>
+              <button class="btn-count btn btn-danger">-</button></td>
+            <td class="price-section">15231</td>
+          </tr>
+          <tr class="card">
+            <p>Медовик</p>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="false">
+  <div class="container">
+    <div class="card">
+      <h5 class="card-title">Корзина</h5>
+    </div>
+    <div class="center">
+      <img src="./assets/images/empty-cart.png" alt="Empty Cart">
+      <h4>Ваша корзина пуста!</h4>
+      <h6>Добавьте сюда что-нибудь</h6>
+      <button class="btn-primary" routerLink="/catalog">К покупкам!</button>
+    </div>
+  </div>
+</ng-container>

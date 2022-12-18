@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { PropsListComponent } from './props-list/props-list.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +26,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PropsListComponent,
     CatalogComponent,
     HeaderComponent,
     FooterComponent,

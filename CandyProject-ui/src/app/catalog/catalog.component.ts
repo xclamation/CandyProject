@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ApiService} from "../api/api.service";
+import {ApiService} from "../service/api.service";
 
 @Component({
   selector: 'app-catalog',
@@ -7,7 +7,7 @@ import {ApiService} from "../api/api.service";
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
-  public apiUrl = "http://localhost:5000/";
+  public apiUrl = 'http://localhost:5000/';
   public productList: any;
 
   constructor(private api: ApiService) {}

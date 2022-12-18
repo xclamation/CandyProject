@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {HOME_ROUTE} from "../routes";
 
 @Component({
   selector: 'app-cart',
