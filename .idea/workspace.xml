@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/service/cart.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/service/cart.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +110,8 @@
       <workItem from="1671351353609" duration="10449000" />
       <workItem from="1671369593763" duration="13779000" />
       <workItem from="1671440061465" duration="9136000" />
-      <workItem from="1671456816748" duration="295000" />
+      <workItem from="1671456816748" duration="8269000" />
+      <workItem from="1671484460936" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -173,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671451092483</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial Commit">
+      <created>1671457174542</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671457174542</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

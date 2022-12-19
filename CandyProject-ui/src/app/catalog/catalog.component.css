@@ -7,7 +7,18 @@
 img{
   width: 200px;
   height: 200px;
-  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 
+.form-group{
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}

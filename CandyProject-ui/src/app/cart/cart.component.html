@@ -1,4 +1,4 @@
-<ng-container *ngIf="true">
+<ng-container *ngIf="products.length > 0">
 <!--  <div class="container">-->
 <!--    <div class="table-name">Список Товаров:</div>-->
 <!--    <div class="card-table">-->
@@ -102,7 +102,7 @@
                   <!-- Image -->
                 </div>
 
-                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                <div class="title col-lg-5 col-md-6 mb-4 mb-lg-0">
                   <!-- Data -->
                   <p><strong>{{item.title}}</strong></p>
                   <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
@@ -112,24 +112,23 @@
                   <!-- Data -->
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0  justify-content-center">
+                <div class="quantity col-lg-4 col-md-6 mb-4 mb-lg-0  justify-content-center">
                   <!-- Quantity -->
                   <div class="d-flex mb-4" style="max-width: 200px">
-                    <button class="btn btn-primary px-3 me-2"
+                    <button class="btn btn-primary me-2"
                             onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
                     (click)="quantityDown(item)">
-                      <i class="fas fa-minus"></i>
+                      -
                     </button>
 
                     <div class="form-outline">
                       <input id="form1" min="0" name="quantity" value={{item.quantity}} type="number" class="form-control" />
-                      <label class="form-label" for="form1">Quantity</label>
                     </div>
 
-                    <button class="btn btn-primary px-3 ms-2"
+                    <button class="btn btn-primary ms-2"
                             onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
                     (click)="quantityUp(item)">
-                      <i class="fas fa-plus"></i>
+                      +
                     </button>
                   </div>
                   <!-- Quantity -->
@@ -155,7 +154,7 @@
             </div>
             <ul *ngFor="let item of products">
               <li class="mt-2" *ngIf="item.quantity > 0">
-              {{item.title}} x{{item.quantity}} -- {{item.total}} р.
+              {{item.title}} x {{item.quantity}} -- <i>{{item.total}}</i> р.
               </li>
             </ul>
             <div class="card-body" >
@@ -185,7 +184,7 @@
   </section>
 </ng-container>
 
-<ng-container *ngIf="false">
+<ng-container *ngIf="products.length === 0">
   <div class="container">
     <div class="card">
       <h5 class="card-title">Корзина</h5>

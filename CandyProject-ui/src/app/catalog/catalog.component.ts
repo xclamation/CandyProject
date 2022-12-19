@@ -9,7 +9,7 @@ import {CartService} from "../service/cart.service";
 })
 export class CatalogComponent implements OnInit {
   public apiUrl = 'http://localhost:5000/';
-  public productList: any;
+  public productList: any[] = [];
   public searchTerm = '';
 
   constructor(private api: ApiService, private cartService: CartService) {}

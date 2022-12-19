@@ -1,1 +1,4 @@
-<p>product-page works!</p>
+<div class="container" *ngIf="product != undefined">
+  <img src="{{product.image}}">
+  <p>{{product.title}}</p>
+</div>

@@ -91,13 +91,13 @@
 <!--    </ng-container>-->
 <!--  </div>-->
 <!--</div>-->
-<div class="form-group">
-  <input type="text" class="form-control"  [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Поиск товара">
+<div class="form-group align-content-center">
+  <input type="text" class="form-control"  [(ngModel)]="searchTerm" (keyup.enter)="search($event)" placeholder="Введите название товара">
 </div>
 <span class="fas fa-search-search-icon"></span>
 <div class="container justify-content-center position-relative"  >
   <div class="row justify-content-between">
-    <div class="card" style="width: 20rem;" *ngFor="let item of productList | filter:searchTerm:'title'"><!--      filter:searchKey:'name'-->
+    <div class="card" style="width: 20rem;" *ngFor="let item of productList | filter:searchTerm:'title'"><!--      filter:searchTerm:'name'-->
       <a routerLink="/product/{{item.id}}"><img class="card-img-top mt-2" src={{item.image}} alt={{item.name}}></a>
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>

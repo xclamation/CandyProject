@@ -20,8 +20,22 @@ export class CartService {
   }
 
   addToCart(product:any){
-    this.cartItemList.push(product);
-    this.productList.next(this.cartItemList);
+    let isInCart = 0;
+    if (this.cartItemList.length) {
+      isInCart = this.cartItemList.find((element:any)=>{
+        return element.id === product.id;
+      });
+    }
+
+    if (isInCart || (product.quantity > 1))
+    {
+      product.quantity += 1;
+      product.total = +(product.total + product.price).toFixed(2)
+    } else{
+      this.cartItemList.push(product);
+      this.productList.next(this.cartItemList);
+    }
+
     this.getTotalPrice();
   }
 
