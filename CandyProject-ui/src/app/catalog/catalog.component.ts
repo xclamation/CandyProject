@@ -10,7 +10,8 @@ import {CartService} from "../service/cart.service";
 export class CatalogComponent implements OnInit {
   public apiUrl = 'http://localhost:5000/';
   public productList: any;
-  searchKey:string = '';
+  public searchTerm = '';
+
   constructor(private api: ApiService, private cartService: CartService) {}
 
   ngOnInit(): void {
@@ -23,9 +24,14 @@ export class CatalogComponent implements OnInit {
       //console.log(this.productList);
       }
     )
+
   }
 
   addToCart(item:any){
     this.cartService.addToCart(item);
+  }
+
+  search(event:any){
+    this.searchTerm = (event.target as HTMLInputElement).value;
   }
 }

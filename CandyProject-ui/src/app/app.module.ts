@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './auth/auth.component';
 import { CartComponent } from './cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
   {path: HOME_ROUTE, component: HomeComponent},
@@ -41,7 +42,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule,
     OAuthModule.forRoot(),
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
