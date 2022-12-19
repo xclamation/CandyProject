@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/api/api.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/api/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CandyProject-ui/src/app/service/cart.service.ts" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2IlqNBRRuHtttaZnbLbydlK8lkD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,7 +58,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.20533642" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="ts.external.directory.path" value="C:\Users\xclamation\OneDrive\Documents\WebPractice\CandyProject-main\CandyProject-ui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -105,7 +106,8 @@
       <workItem from="1671278109719" duration="12397000" />
       <workItem from="1671293745443" duration="397000" />
       <workItem from="1671351353609" duration="10449000" />
-      <workItem from="1671369593763" duration="550000" />
+      <workItem from="1671369593763" duration="13779000" />
+      <workItem from="1671440061465" duration="7457000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -142,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671294085256</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial Commit">
+      <created>1671370252913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671370252913</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <created>1671446618058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671446618058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +170,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -178,5 +199,15 @@
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

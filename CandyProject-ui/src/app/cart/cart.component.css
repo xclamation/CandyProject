@@ -43,6 +43,9 @@ img {
   max-width: 200px;
   max-height: 200px;
 }
+img:hover{
+  cursor: pointer;
+}
 
 table{
   width: 600px;

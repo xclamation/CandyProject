@@ -92,8 +92,9 @@
                 <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                   <!-- Image -->
                   <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                    <img src={{item.image}}
-                         class="w-100" alt={{item.name}} routerLink={{"/product/" + item?.id}}/>
+                    <a routerLink="/product/{{item.id}}">
+                      <img src={{item.image}}
+                           class="w-100" alt={{item.name}}/></a>
                     <a href="#!">
                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                     </a>
@@ -115,7 +116,8 @@
                   <!-- Quantity -->
                   <div class="d-flex mb-4" style="max-width: 200px">
                     <button class="btn btn-primary px-3 me-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    (click)="quantityDown(item)">
                       <i class="fas fa-minus"></i>
                     </button>
 
@@ -125,7 +127,8 @@
                     </div>
 
                     <button class="btn btn-primary px-3 ms-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    (click)="quantityUp(item)">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
@@ -151,8 +154,8 @@
               <h5 class="mb-0">Итого</h5>
             </div>
             <ul *ngFor="let item of products">
-              <li class="mt-2">
-              {{item.title}} - {{item.price}} р.
+              <li class="mt-2" *ngIf="item.quantity > 0">
+              {{item.title}} x{{item.quantity}} -- {{item.total}} р.
               </li>
             </ul>
             <div class="card-body" >
