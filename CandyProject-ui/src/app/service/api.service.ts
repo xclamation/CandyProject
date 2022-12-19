@@ -9,7 +9,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getProduct() {
-    return this.http.get<any>("http://localhost:5000/api/product").pipe(map( (res:any) =>{return res;}));
+  getProducts() {
+    return this.http.get<any>('https://fakestoreapi.com/products').pipe(map( (res:any) =>{return res;})); //"http://localhost:5000/api/product"
   }
 }

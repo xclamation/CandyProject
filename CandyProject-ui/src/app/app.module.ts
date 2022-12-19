@@ -13,6 +13,7 @@ import {AUTH_ROUTE, CART_ROUTE, CATALOG_ROUTE, HOME_ROUTE, PRODUCT_ROUTE} from "
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './auth/auth.component';
 import { CartComponent } from './cart/cart.component';
+import { FilterPipe } from './shared/filter.pipe';
 
 const routes: Routes = [
   {path: HOME_ROUTE, component: HomeComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
     ProductPageComponent,
     HomeComponent,
     AuthComponent,
-    CartComponent
+    CartComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

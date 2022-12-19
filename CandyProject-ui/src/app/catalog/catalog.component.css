@@ -1,4 +1,13 @@
+.container{
+  margin-top: 25px;
+}
+.card{
+  margin-bottom: 10px;
+}
 img{
   width: 200px;
   height: 200px;
+  align-self: center;
 }
+
+

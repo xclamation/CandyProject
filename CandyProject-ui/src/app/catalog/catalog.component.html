@@ -78,17 +78,36 @@
   </div>
 </body>-->
 
-<div class="container">
-  <div class="row">
-    <ng-container *ngFor="let item of productList">
-      <div class="card col-md-2">
-        <img src="{{apiUrl + item.image}}" alt="{{item.name}} image">
-        <h5>Название: {{item.name}}</h5>
-        <p>Цена: {{item.price}} р.</p>
-        <button class="btn btn-primary">Add to cart</button>
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <ng-container *ngFor="let item of productList">-->
+<!--      <div class="card col-md-2">-->
+<!--&lt;!&ndash;        <img src="{{apiUrl + item.image}}" alt="{{item.name}} image">&ndash;&gt;-->
+<!--        <img src="{{item.image}}" alt="{{item.name}} image">-->
+<!--        <h5>Название: {{item.name}}</h5>-->
+<!--        <p>Цена: {{item.price}} р.</p>-->
+
+<!--      </div>-->
+<!--    </ng-container>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Поиск товара">
+</div>
+<span class="fas fa-search-search-icon"></span>
+<div class="container justify-content-center position-relative"  >
+  <div class="row justify-content-between">
+    <div class="card" style="width: 20rem;" *ngFor="let item of productList | filter:searchKey:'title'"><!--      filter:searchKey:'name'-->
+      <img class="card-img-top mt-2" src={{item.image}} alt={{item.name}} routerLink={{"/product/" + item?.id}}>
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button class="btn btn-primary" (click)=addToCart(item)>Add to cart</button>
+        <span class="m-lg-2">Цена: {{item.price}} р.</span>
       </div>
-    </ng-container>
+    </div>
   </div>
 </div>
+
 
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from "../service/api.service";
+import {CartService} from "../service/cart.service";
 
 @Component({
   selector: 'app-catalog',
@@ -9,15 +10,22 @@ import {ApiService} from "../service/api.service";
 export class CatalogComponent implements OnInit {
   public apiUrl = 'http://localhost:5000/';
   public productList: any;
-
-  constructor(private api: ApiService) {}
+  searchKey:string = '';
+  constructor(private api: ApiService, private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.api.getProduct().subscribe(res =>{
-      this.productList = res.rows;
-      console.log(this.productList);
+    this.api.getProducts().subscribe(res =>{
+      this.productList = res;//res.rows;
+
+      this.productList.forEach((a:any)=>{
+        Object.assign(a, {quantity:1, total:a.price});
+      })
+      //console.log(this.productList);
       }
     )
   }
 
+  addToCart(item:any){
+    this.cartService.addToCart(item);
+  }
 }
