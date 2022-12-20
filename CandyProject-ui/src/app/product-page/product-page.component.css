@@ -1,0 +1,29 @@
+.container{
+  margin-top: 40px;
+}
+
+.product-image{
+  width: 400px;
+  height: 400px;
+}
+
+.title {
+  margin-left: 100px;
+}
+
+.card {
+  margin-top: 15px;
+}
+.product-name{
+  font-size: 40px;
+}
+.ingredients{
+  padding: 5px;
+}
+.ingredients:first-child{
+  margin-top: 10px;
+}
+
+.instruction:last-child{
+  margin-bottom: 30px;
+}

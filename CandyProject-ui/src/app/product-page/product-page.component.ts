@@ -2,42 +2,112 @@ import { Component, OnInit } from '@angular/core';
 import {ApiService} from "../service/api.service";
 import {ActivatedRoute} from "@angular/router";
 
+
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',
   styleUrls: ['./product-page.component.css']
 })
+
 export class ProductPageComponent implements OnInit {
   public apiUrl = 'http://localhost:5000/';
   public product:any;
+  public cake = {
+    "id":"1",
+    "name":"Медовик",
+    "instruction":[
+      {
+        "step":"1",
+        "description":"Приготовьте тесто для коржей классического торта Медовик. Сливочное масло нарежьте кубиками и оставьте на 30 минут при комнатной температуре (оно должно стать мягким)."
+      },
+      {
+        "step":"2",
+        "description":"Яйца взбейте миксером с сахаром до получения пышной массы однородной консистенции. Добавьте мягкое сливочное масло и еще раз тщательно взбейте миксером."
+      },
+      {
+        "step":"3",
+        "description":"Мед выложите в небольшой ковшик. Поставьте на огонь и, помешивая, доведите до кипения. Снимите с огня и сразу всыпьте соду. Перемешайте. Будьте осторожны: масса начнет пениться и подниматься."
+      },
+      {
+        "step":"4",
+        "description":"Медовую смесь добавьте в яичную и перемешайте. Постепенно, по полстакана, добавляйте муку, тщательно вымешивая после каждой порции. Тесто для коржей медовика должно получиться довольно мягким."
+      },
+      {
+        "step":"5",
+        "description":"Из теста сформуйте шар, заверните его в пищевую пленку и уберите в холодильник на 30-40 минут. После этого тесто будет легче формировать для приготовления коржей классического медовика."
+      },
+      {
+        "step":"6",
+        "description":"Достаньте тесто из холодильника и разделите на 8-10 частей. Форму диаметром 22-24 м смажьте небольшим количеством сливочного масла. Поместите в нее порцию теста и максимально тонко распределите по всей поверхности. Выпекайте около 3 минут при 200°C до подрумянивания. Таким образом приготовьте все коржи медовика."
+      },
+      {
+        "step":"7",
+        "description":"Приготовьте крем для классического торта Медовик. Для этого хорошо охлажденную сметану взбейте в пышную массу, постепенно добавляя сахар и мед. Готовый крем должен иметь однородную консистенцию."
+      },
+      {
+        "step":"8",
+        "description":"Один корж мелко раскрошите блендером или раскатайте на столе скалкой. Остальные сложите друг на друга, прослаивая приготовленным кремом. Покройте им также верх и бока классического торта Медовик."
+      },
+      {
+        "step":"9",
+        "description":"Торт посыпьте крошкой со всех сторон и оставьте на 2 часа при комнатной температуре. Затем уберите в холодильник на 6-8 часов. Перед подачей украсьте по желанию."
+      }
+    ],
+    "ingredients":[
+      {
+        "name":"Мука",
+        "amount":"300г"
+      },
+      {
+        "name":"Яйца",
+        "amount":"4 шт"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Мёд",
+        "amount":"100г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      },
+      {
+        "name":"Сахар",
+        "amount":"150г"
+      }
+    ]
+  }
 
   constructor(private api: ApiService, private activatedRoute: ActivatedRoute) {
-    // activatedRoute.params.subscribe((params:any)=>{
-    //   if (params.id){
-    //     api.getProduct(params.id).subscribe((res:any) => {
-    //       this.product = res;
-    //       console.log('constructor');
-    //     });
-    //
-    //   }
-    // })
-
-  }
-
-  ngOnInit(): void {
-   // this.api.getProduct().subscribe(res =>{
-   //    this.product = res;//res.rows;
-   //    //console.log(this.productList);
-   //  })
-    this.activatedRoute.params.subscribe((params:any)=>{
+    activatedRoute.params.subscribe((params:any)=>{
       if (params.id){
-        this.api.getProduct(params.id).subscribe((res:any) => {
+        api.getProduct(params.id).subscribe((res:any) => {
           this.product = res;
-          console.log('constructor');
         });
-
       }
     })
-    console.log("ngOnInit")
   }
+
+
+  ngOnInit(): void {}
+
 }

@@ -83,6 +83,7 @@
 <!--  </section>-->
   <section class="h-100 gradient-custom">
     <div class="container py-5" >
+      <h3>Корзина</h3>
       <div class="row d-flex justify-content-center my-4">
         <div class="col-md-8">
           <div class="card mb-4" *ngFor="let item of products">
@@ -95,9 +96,7 @@
                     <a routerLink="/product/{{item.id}}">
                       <img src={{item.image}}
                            class="w-100" alt={{item.name}}/></a>
-                    <a href="#!">
-                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                    </a>
+
                   </div>
                   <!-- Image -->
                 </div>
@@ -107,7 +106,7 @@
                   <p><strong>{{item.title}}</strong></p>
                   <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
                           title="Remove item" (click)="removeItem(item)">
-                    Удалить товар
+                    🗑
                   </button>
                   <!-- Data -->
                 </div>
@@ -186,14 +185,11 @@
 
 <ng-container *ngIf="products.length === 0">
   <div class="container">
-    <div class="card">
-      <h5 class="card-title">Корзина</h5>
-    </div>
-    <div class="center">
-      <img src="./assets/images/empty-cart.png" alt="Empty Cart">
-      <h4>Ваша корзина пуста!</h4>
-      <h6>Добавьте сюда что-нибудь</h6>
-      <button class="btn-primary" routerLink="/catalog">К покупкам!</button>
-    </div>
+      <div class="center">
+        <img src="./assets/images/empty-cart.png" alt="Empty Cart">
+        <h4>Ваша корзина пуста!</h4>
+        <h6>Добавьте сюда что-нибудь</h6>
+        <button class="btn-primary" routerLink="/catalog">К покупкам!</button>
+      </div>
   </div>
 </ng-container>

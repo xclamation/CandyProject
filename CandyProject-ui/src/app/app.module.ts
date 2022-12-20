@@ -15,6 +15,9 @@ import { AuthComponent } from './auth/auth.component';
 import { CartComponent } from './cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NotFoundComponent } from './not-found/not-found.component';
+import {SocialAuthServiceConfig} from "@abacritt/angularx-social-login";
+import {SocialLoginModule, GoogleLoginProvider} from "@abacritt/angularx-social-login";
 
 const routes: Routes = [
   {path: HOME_ROUTE, component: HomeComponent},
@@ -23,8 +26,9 @@ const routes: Routes = [
   {path: CART_ROUTE, component: CartComponent},
   {path: AUTH_ROUTE, component: AuthComponent},
   {path: PRODUCT_ROUTE + '/:id', component: ProductPageComponent, pathMatch:'full'},
-  {path: '**', redirectTo: HOME_ROUTE},
+  {path: '**', component: NotFoundComponent, pathMatch:"full"},
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,18 +39,38 @@ const routes: Routes = [
     HomeComponent,
     AuthComponent,
     CartComponent,
-    FilterPipe
+    FilterPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    OAuthModule.forRoot(),
+    //OAuthModule.forRoot(),
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '484845140349-tlem6011dunl6tjvesjl8hqeqda0ts18.apps.googleusercontent.com'
+            )
+          }
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 

@@ -1,2 +1,36 @@
-<div [style]="{color: 'red'}">Welcome to CandyShop!</div>
+<!--
+<div style="{color: red}">Welcome to CandyShop!</div>
 <div><a routerLink="/catalog">Click here to visit catalog!</a></div>
+-->
+
+
+<div class="card text-center" *ngIf="!user">
+  <h6 class="card-header">Google Authentication</h6>
+  <div class="card-block">
+    <h4 class="card-title">Not Signed in</h4>
+    <p class="card-text">Sign in With Google</p>
+  </div>
+  <div class="card-block">
+<!--    <button class="btn btn-success" (click)="signInWithGoogle()">-->
+<!--      Войти в аккаунт Google-->
+<!--    </button>-->
+    <asl-google-signin-button></asl-google-signin-button>
+  </div>
+</div>
+
+<div class="card text-center" *ngIf="user">
+  <h6 class="card-header">Google Authentication</h6>
+  <div class="card-block"></div>
+  <img class="card-img-top img-responsive photo" src="{{user.photoUrl}}" alt="User's profile photo">
+  <div class="card-block">
+    <h4 class="card-title">Имя: {{user.name}}</h4>
+    <p class="card-text">Email: {{user.email}}</p>
+  </div>
+  <div class="card-block">
+    <button class="btn btn-primart" (click)="signOut()">
+      Выйти из аккаунта
+    </button>
+  </div>
+</div>
+
+

@@ -7,7 +7,7 @@ import {GoogleApiService, UserInfo} from "../google-api/google-api.service";
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent {
-  userInfo?: UserInfo;
+/*  userInfo?: UserInfo;
 
   constructor(private readonly googleApi: GoogleApiService) {
     googleApi.userProfileSubject.subscribe( info => {
@@ -25,6 +25,8 @@ export class AuthComponent {
 
   loginInWithGoogle() {
     this.googleApi.loginIn();
-  }
+  }*/
+
+
 
 }
