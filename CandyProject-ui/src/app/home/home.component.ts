@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 import {SocialAuthService} from "@abacritt/angularx-social-login";
 import {SocialUser, GoogleLoginProvider} from "@abacritt/angularx-social-login";
 
+@Injectable({
+  providedIn: 'root'
+})
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,21 +12,22 @@ import {SocialUser, GoogleLoginProvider} from "@abacritt/angularx-social-login";
 })
 export class HomeComponent {
   user!: SocialUser;
-  loggedIn: boolean = false;
+  public loggedIn = false;
 
-  constructor(private authService: SocialAuthService) {
-
-  }
+  constructor(private authService: SocialAuthService) {  }
 
   ngOnInit(): void {
     this.authService.authState.subscribe((user) => {
       this.user = user;
       this.loggedIn = (user != null);
-      console.log(user);
+      //console.log(user);
+      //console.log(this.loggedIn);
     });
+
     console.log('ngOnInit');
 
   }
+
 
   signInWithGoogle(): void {
     void this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
@@ -34,5 +38,7 @@ export class HomeComponent {
     void this.authService.signOut();
   }
 
-
+  isLoggedIn(){
+    return this.loggedIn
+  }
 }

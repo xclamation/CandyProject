@@ -9,10 +9,10 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get<any>('https://fakestoreapi.com/products').pipe(map( (res:any) => {return res;})); //"http://localhost:5000/api/product"
+    return this.http.get<any>('http://localhost:5000/api/product').pipe(map( (res:any) => {return res;})); //"http://localhost:5000/api/product"
   }
 
   getProduct(id:number) {
-    return this.http.get<any>('https://fakestoreapi.com/products/' + id).pipe(map( (res:any) => {return res;})); //"http://localhost:5000/api/product"
+    return this.http.get<any>('http://localhost:5000/api/product/' + id).pipe(map( (res:any) => {return res;})); //"http://localhost:5000/api/product"
   }
 }

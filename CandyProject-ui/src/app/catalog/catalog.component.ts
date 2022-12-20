@@ -16,7 +16,7 @@ export class CatalogComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getProducts().subscribe(res =>{
-      this.productList = res;//res.rows;
+      this.productList = res.rows;//res.rows;
 
       this.productList.forEach((a:any)=>{
         Object.assign(a, {quantity:1, total:a.price});

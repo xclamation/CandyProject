@@ -9,20 +9,37 @@ class ProductController {
             let {name, price, instruction, ingredients} = req.body;
             const {image} = req.files;
             let fileName = uuid.v4() + ".jpg";
-            image.mv(path.resolve(__dirname, '..', 'static', fileName))
+            image.mv(path.resolve(__dirname, '..', 'static', fileName));
+            //console.log(JSON.parse(instruction))
+/*            instruction = JSON.parse(instruction);
+            ingredients = JSON.parse(ingredients);*/
+            for (let i = 0; i < instruction.length; i++) {
+                instruction[i] = JSON.parse(instruction[i].toString().replace('""', '","'));
+            }
+            for (let i = 0; i < ingredients.length; i++) {
+                ingredients[i] = JSON.parse(ingredients[i].toString().replace('""', '","'));
+            }
+            const product = await Product.create({name, price,ingredients, instruction, image: fileName});
 
-            const product = await Product.create({name, price, instruction, image: fileName})
-
-            if (ingredients) {
+/*            if (ingredients) {
                 ingredients = JSON.parse(ingredients);
+
                 ingredients.forEach(i =>
-                    ProductIngredient.create({
+                    Ingredients.create({
+                        name: i.name,
                         amount: i.amount,
-                        productId: product.id,
-                        ingredientId: i.ingredientId,
                     })
                 )
             }
+            if (instruction) {
+                instruction = JSON.parse(instruction);
+                instruction.forEach(i =>
+                    Ingredients.create({
+                        name: i.name,
+                        amount: i.amount,
+                    })
+                )
+            }*/
 /*            if (ntrenv) {
                 await NutritionEnergyValues.create({
                     proteins: ntrenv.proteins,

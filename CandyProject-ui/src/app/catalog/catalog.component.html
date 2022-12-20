@@ -91,18 +91,19 @@
 <!--    </ng-container>-->
 <!--  </div>-->
 <!--</div>-->
+<app-header></app-header>
 <div class="form-group align-content-center">
   <input type="text" class="form-control"  [(ngModel)]="searchTerm" (keyup.enter)="search($event)" placeholder="Введите название товара">
 </div>
 <span class="fas fa-search-search-icon"></span>
 <div class="container justify-content-center position-relative"  >
   <div class="row justify-content-between">
-    <div class="card" style="width: 20rem;" *ngFor="let item of productList | filter:searchTerm:'title'"><!--      filter:searchTerm:'name'-->
-      <a routerLink="/product/{{item.id}}"><img class="card-img-top mt-2" src={{item.image}} alt={{item.name}}></a>
+    <div class="card" style="width: 20rem;" *ngFor="let item of productList | filter:searchTerm:'name'"><!--      filter:searchTerm:'name'-->
+      <a routerLink="/product/{{item.id}}"><img class="card-img-top mt-2" src="{{apiUrl}}{{item.image}}" alt={{item.name}}></a>
       <div class="card-body">
-        <h5 class="card-title">{{item.title}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button class="btn btn-primary" (click)=addToCart(item)>Add to cart</button>
+        <h5 class="card-title text-center mb-3">"{{item.name}}"</h5>
+        <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+        <button class="btn btn-primary" (click)="addToCart(item)">В корзину</button>
         <span class="m-lg-2">Цена: {{item.price}} р.</span>
       </div>
     </div>

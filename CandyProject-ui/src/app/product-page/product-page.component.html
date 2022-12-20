@@ -1,13 +1,14 @@
+<app-header></app-header>
 <ng-container *ngIf="product != undefined">
   <div class="container" >
     <div class="row">
       <div class="col-md-auto">
-        <img class="product-image" src="{{product.image}}" alt="{{product.title}}">
+        <img class="product-image" src="{{apiUrl}}{{product.image}}" alt="{{product.name}}">
       </div>
       <div class="title col-md-auto">
-        <div class="product-name text-center">"{{cake.name}}"</div>
+        <div class="product-name text-center">"{{product.name}}"</div>
         <div class="card">
-          <div class="ingredients card-body" *ngFor="let ingr of cake.ingredients">
+          <div class="ingredients card-body" *ngFor="let ingr of product.ingredients">
             <ul>
               <li>{{ingr.name}} - {{ingr.amount}}</li>
             </ul>
@@ -17,7 +18,7 @@
     </div>
   </div>
 
-  <div class="container instruction" *ngFor = "let instr of cake.instruction">
+  <div class="container instruction" *ngFor = "let instr of product.instruction">
     <div class="card">
       <div class="card-header"><strong>{{instr.step}}.</strong></div>
       <div class="card-body">{{instr.description}}</div>
