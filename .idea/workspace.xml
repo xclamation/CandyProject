@@ -3,37 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/controllers/productController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/models/models.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/114654e6-7c59-4ec1-beb8-18f1e55cf82a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/1ad99b61-acad-401c-8fe8-88d580bf52fe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/2271205d-f8a4-4292-98e6-7ffab50c3331.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/5d4cde5b-506e-48d2-a94f-1470041b4644.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/60ccbde9-6c16-4479-be72-e64e907bf69e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/6a1716c8-8a9b-4c67-bbf6-d53b9efb8a66.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/6ce2d91f-c24d-43cc-895d-148b5dcfa9c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/7b00c911-21db-42f1-ae16-33c50a9c0f29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/7ba4facb-c400-4d30-afb7-2676230bd626.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/8ca32d7a-0021-4225-b4f5-13597439078a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/90ac2526-eee7-45eb-a90a-3c6f1bf99b23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/947b7dde-f562-4c81-94f0-fa580a7bac18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/af5d1535-faae-467c-a8c6-12df7a3b1924.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/c0ec1742-7e44-49d8-a251-cdfdc06e6287.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/c4b3f9d4-fe3e-4392-be39-d070db07cc0b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/static/d4b71731-4e21-41b5-bb9d-d368413a933a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/catalog/catalog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/product-page/product-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +38,9 @@
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2IlqNBRRuHtttaZnbLbydlK8lkD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -138,7 +112,8 @@
       <workItem from="1671456816748" duration="8269000" />
       <workItem from="1671484460936" duration="4297000" />
       <workItem from="1671526920701" duration="15382000" />
-      <workItem from="1671560760034" duration="15424000" />
+      <workItem from="1671560760034" duration="15475000" />
+      <workItem from="1671577784474" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -231,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671542330934</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Initial Commit">
+      <created>1671577742396</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671577742397</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,16 +254,5 @@
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/CandyProject-ui/src/app/cart/cart.component.html</url>
-          <line>1</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

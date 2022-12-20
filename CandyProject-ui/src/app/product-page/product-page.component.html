@@ -8,6 +8,7 @@
       <div class="title col-md-auto">
         <div class="product-name text-center">"{{product.name}}"</div>
         <div class="card">
+          <div class="card-header"><h6>Ингредиенты:</h6></div>
           <div class="ingredients card-body" *ngFor="let ingr of product.ingredients">
             <ul>
               <li>{{ingr.name}} - {{ingr.amount}}</li>
@@ -18,12 +19,18 @@
     </div>
   </div>
 
-  <div class="container instruction" *ngFor = "let instr of product.instruction">
-    <div class="card">
-      <div class="card-header"><strong>{{instr.step}}.</strong></div>
-      <div class="card-body">{{instr.description}}</div>
+  <div class="card">
+    <div class="card-header text-center"><h4>Рецепт:</h4></div>
+    <div class="card-body">
+      <div class="container instruction" *ngFor = "let instr of product.instruction">
+        <div class="card">
+          <div class="card-header"><strong>{{instr.step}}.</strong></div>
+          <div class="card-body">{{instr.description}}</div>
+        </div>
+      </div>
     </div>
   </div>
+
 </ng-container>
 
 <ng-container *ngIf="product == null && product != undefined">
