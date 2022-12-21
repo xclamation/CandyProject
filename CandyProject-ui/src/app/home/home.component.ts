@@ -14,7 +14,9 @@ export class HomeComponent {
   user!: SocialUser;
   public loggedIn = false;
 
-  constructor(private authService: SocialAuthService) {  }
+  constructor(private authService: SocialAuthService) {
+
+  }
 
   ngOnInit(): void {
     this.authService.authState.subscribe((user) => {
@@ -23,15 +25,14 @@ export class HomeComponent {
       //console.log(user);
       //console.log(this.loggedIn);
     });
-
-    console.log('ngOnInit');
+    //console.log('ngOnInit');
 
   }
 
 
   signInWithGoogle(): void {
     void this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
-    console.log('signIn');
+    //console.log('signIn');
   }
 
   signOut(): void {

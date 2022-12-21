@@ -61,7 +61,7 @@ const routes: Routes = [
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '484845140349-tlem6011dunl6tjvesjl8hqeqda0ts18.apps.googleusercontent.com'
+              '484845140349-tlem6011dunl6tjvesjl8hqeqda0ts18.apps.googleusercontent.com',{scopes:"profile email"}
             )
           }
         ],
