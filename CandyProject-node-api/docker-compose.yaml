@@ -1,0 +1,37 @@
+version: "2.13.0"
+
+services:
+  postgres_db:
+    container_name: postgres_db
+    image: postgres:15.1
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER = user
+      - POSTGRES_PASSWORD = password
+      - POSTGRES_DB = candy_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+
+
+  webserver:
+    container_name: web_server
+    image: node-api:0.0.2
+#    restart: always
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - EXTERNAL_PORT = 5000
+      - PGDATABASE = candy_db
+      - PGUSER = user
+      - PGPASSWORD = password
+      - PGHOST = postgres_db
+    #      name of container
+    depends_on:
+      - postgres_db
+
+volumes:
+  pgdata:

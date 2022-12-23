@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/CandyDB</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="postgres_db" uuid="af2f3d7c-0fcc-4e8b-9d35-d1bdc121e4af">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://postgres_db:5432/candy_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

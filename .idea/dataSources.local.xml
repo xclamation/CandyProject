@@ -10,9 +10,17 @@
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="CandyDB" />
+          <node kind="database" qname="CandyDB">
+            <node kind="schema" qname="public" />
+          </node>
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="postgres_db" uuid="af2f3d7c-0fcc-4e8b-9d35-d1bdc121e4af">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>user</user-name>
+      <schema-mapping />
     </data-source>
   </component>
 </project>
