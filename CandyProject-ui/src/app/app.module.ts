@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductPageComponent } from './product-page/product-page.component'
 import {HttpClientModule} from "@angular/common/http";
-import {OAuthModule} from "angular-oauth2-oidc";
+//import {OAuthModule} from "angular-oauth2-oidc";
 import { HomeComponent } from './home/home.component';
 import {AUTH_ROUTE, CART_ROUTE, CATALOG_ROUTE, HOME_ROUTE, PRODUCT_ROUTE} from "./routes";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';

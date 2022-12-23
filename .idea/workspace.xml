@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9ceb41c-1fe7-482e-aeee-7d210abfd93b" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CandyProject-node-api/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a55d721e-221c-4fc3-9eb4-26557386c6be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a55d721e-221c-4fc3-9eb4-26557386c6be.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-node-api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-node-api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/service/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/auth/auth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/auth/auth.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/CandyProject-ui/src/app/google-api/google-api.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +130,8 @@
       <workItem from="1671699149207" duration="2835000" />
       <workItem from="1671712393798" duration="21081000" />
       <workItem from="1671787034199" duration="218000" />
+      <workItem from="1671787283801" duration="125000" />
+      <workItem from="1671787454665" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671208908579</created>
@@ -251,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671611821222</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Initial Commit">
+      <created>1671787403901</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671787403901</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
